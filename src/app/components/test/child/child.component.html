@@ -1,0 +1,11 @@
+<div>
+    <ng-content></ng-content>
+    This is Child Component -- {{value}}<br/>
+    <button (click)="btnClickHandler()">
+        <!-- Child is crying -->
+        <ng-content select="h2"></ng-content>
+    </button>
+    <ng-content select="#idBtn"></ng-content>
+    <ng-content select=".class-btn"></ng-content>
+    <ng-content select="[attrBtn]"></ng-content>
+</div>

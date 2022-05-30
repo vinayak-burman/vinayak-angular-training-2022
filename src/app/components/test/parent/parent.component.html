@@ -1,0 +1,20 @@
+<div>
+    This is parent component.
+    <br/>
+    Message from Child Component :{{messageFromChildComp}}<br/>
+    <input (change)="inputChanged($event)"/>
+    <app-child [value]="inputVal" (childCrying)="childCryingEventHandler($event)">
+
+
+        <!-- --------------- Passing html/view from parent to child ---------------- -->
+        <h2>Buton Label</h2>
+    <p>This will be rendered in anonymmouse content slot</p>
+    <h1>THIS HEADER IS A CONTENT TO CHILD ELEMENT FROM PARENT</h1>
+    <button class="bg-red-400"
+            id="idBtn">ID BUTTON</button>
+    <button class="bg-green-400 class-btn">CLASS BUTTON</button>
+    <button class="bg-blue-400"
+            attrBtn>ATTRIBUTE BUTTON</button>
+
+    </app-child>
+</div>
